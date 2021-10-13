@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.source.mapper.JobLogMapper">
+  <resultMap id="BaseResultMap" type="com.source.bean.JobLog">
+    <!--@mbg.generated-->
+    <!--@Table t_job_log-->
+    <id column="LOG_ID" jdbcType="BIGINT" property="logId" />
+    <result column="JOB_ID" jdbcType="BIGINT" property="jobId" />
+    <result column="BEAN_NAME" jdbcType="VARCHAR" property="beanName" />
+    <result column="METHOD_NAME" jdbcType="VARCHAR" property="methodName" />
+    <result column="PARAMS" jdbcType="VARCHAR" property="params" />
+    <result column="STATUS" jdbcType="CHAR" property="status" />
+    <result column="ERROR" jdbcType="LONGVARCHAR" property="error" />
+    <result column="TIMES" jdbcType="DECIMAL" property="times" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    LOG_ID, JOB_ID, BEAN_NAME, METHOD_NAME, PARAMS, `STATUS`, ERROR, TIMES, CREATE_TIME
+  </sql>
+</mapper>
