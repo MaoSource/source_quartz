@@ -122,7 +122,7 @@ http://localhost:8060/job/resume
 
 ![image-20211013164746553](redme.assets/image-20211013164746553.png)
 
-获取调度方法
+获取任务
 
 http://localhost:8060/job/getSysCronClazz
 
